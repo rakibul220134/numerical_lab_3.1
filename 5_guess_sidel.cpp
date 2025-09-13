@@ -3,11 +3,9 @@
     -x + 2y - z = 1
     -y + 2z = 1
 */
-#include <iostream>
-#include <cmath>
 #include<bits/stdc++.h>
-
 using namespace std;
+
 #define f1(x, y, z) (7 + y) / 2
 #define f2(x, y, z) (x + z + 1) / 2
 #define f3(x, y, z) (y + 1) / 2
@@ -27,7 +25,7 @@ int main()
         e2 = abs(y - y0);
         e3 = abs(z - z0);
 
-         e = max({e1, e2, e3});
+        e = max({e1, e2, e3});
 
         x0 = x;
         y0 = y;

@@ -5,14 +5,12 @@ double a, b, c, d;
 
 // f(x)
 #define f(x) (a*x*x*x + b*x*x + c*x + d)
-//return a*x*x*x + b*x*x + c*x + d;
 
 // f'(x) = derivative
 #define f_prime(x) (3*a*x*x + 2*b*x + c)
-    //return 3*a*x*x + 2*b*x + c;
 
 int main() {
-    cout << "Enter coefficients (a b c d): ";
+    cout << "Enter coefficients (ab c d): ";
     cin >> a >> b >> c >> d;
     double x0, tol;
     cout << "Enter initial guess: ";

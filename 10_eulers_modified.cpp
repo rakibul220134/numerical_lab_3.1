@@ -1,5 +1,4 @@
-#include <iostream>
-#include <cmath>
+#include<bits/stdc++.h>
 using namespace std;
 
 #define f(x, y) (y - x) / (y + x)
