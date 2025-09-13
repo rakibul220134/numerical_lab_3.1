@@ -4,13 +4,13 @@ using namespace std;
 double a, b, c, d;
 
 // f(x)
-double f(double x) {
-    return a*x*x*x + b*x*x + c*x + d;
-}
+#define f(x) (a*x*x*x + b*x*x + c*x + d)
+//return a*x*x*x + b*x*x + c*x + d;
+
 // f'(x) = derivative
-double f_prime(double x) {
-    return 3*a*x*x + 2*b*x + c;
-}
+#define f_prime(x) (3*a*x*x + 2*b*x + c)
+    //return 3*a*x*x + 2*b*x + c;
+
 int main() {
     cout << "Enter coefficients (a b c d): ";
     cin >> a >> b >> c >> d;

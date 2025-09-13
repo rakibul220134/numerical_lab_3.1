@@ -5,9 +5,8 @@ using namespace std;
 double a, b, c, d;
 
 // Function f(x) = ax^3 + bx^2 + cx + d
-double f(double x) {
-    return a*x*x*x + b*x*x + c*x + d;
-}
+#define f(x) (a*x*x*x + b*x*x + c*x + d)
+    //return a*x*x*x + b*x*x + c*x + d;
 
 int main() {
     cout << "Enter coefficients (a b c d) for f(x) = ax^3 + bx^2 + cx + d: ";
