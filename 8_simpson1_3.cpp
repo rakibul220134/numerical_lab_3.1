@@ -1,5 +1,4 @@
-#include <iostream>
-#include <cmath>
+#include<bits/stdc++.h>
 using namespace std;
 
 #define f(x) 1 / (1 + (x * x))
@@ -23,7 +22,6 @@ int main()
         if (i % 2 == 0)
             sum = sum + 2 * f(x);
         else
-
             sum = sum + 4 * f(x);
     }
     double result = (h / 3.0) * sum;
