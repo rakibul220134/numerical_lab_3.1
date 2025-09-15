@@ -23,6 +23,7 @@ int main()
 
     cout << "\nModified Euler's Method:\n";
     cout << "x\t\ty\n";
+    
     cout << x << "\t\t" << y << endl;
 
     for (int i = 0; i < n; i++)
