@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-#define f(x) 1 / (1 + (x * x))
+#define f(x)  1 / (1 + (x * x))
 
 int main()
 {

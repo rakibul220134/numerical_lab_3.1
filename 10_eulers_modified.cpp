@@ -5,9 +5,8 @@ using namespace std;
 
 int main()
 {
-    double x0, y0, xn, h;
+    double x0, y0, xn, x, y;
     int n;
-
     cout << "Enter initial x0: ";
     cin >> x0;
     cout << "Enter initial y0: ";
@@ -16,27 +15,17 @@ int main()
     cin >> xn;
     cout << "Enter number of steps (n): ";
     cin >> n;
-
-    h = (xn - x0) / n; // step size
-
-    double x = x0, y = y0;
-
-    cout << "\nModified Euler's Method:\n";
-    cout << "x\t\ty\n";
-    
-    cout << x << "\t\t" << y << endl;
-
+    x = x0;
+    y = y0;
+    double h = (xn - x0) / n;
     for (int i = 0; i < n; i++)
     {
         double k1 = f(x, y);
-        double y_predict = f(x + h, k1);
-        double k2 = f(x + h, y_predict);
-        y = y + (h / 2) * (k1 + k2);
+        double y_predict = y+ h * k1;
+        double k2 = f((x + h), y_predict);
+        y = y + h / 2 * (k1 + k2);
         x = x + h;
-
-        cout << x << "\t\t" << y<<endl;
+        cout << x << "\t\t" << y << endl;
     }
-    cout << "\nApproximate solution at x = " << xn << " is y = " << y << endl;
-
-    return 0;
+    cout << "final answer: " << y;
 }

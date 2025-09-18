@@ -7,8 +7,9 @@ int main()
     cin >> terms;
     cout << "Enter the values: ";
     for (int i = 0; i < terms; i++)
-        cin >> x[i] >> y[i];
-
+    {
+            cin >> x[i] >> y[i];
+    }
     cout << "Enter the  searching values: ";
     cin >> search;
 

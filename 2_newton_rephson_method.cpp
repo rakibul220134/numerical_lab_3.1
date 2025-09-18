@@ -18,8 +18,8 @@ int main() {
     cout << "Enter tolerance: ";
     cin >> tol;
     double x1;
-    while (true) {
-        x1 = x0 - f(x0) / f_prime(x0);
+    while (1) {
+        x1 = x0 - (f(x0) / f_prime(x0));
         if (fabs(x1 - x0) < tol) break;
         x0 = x1;
     }
