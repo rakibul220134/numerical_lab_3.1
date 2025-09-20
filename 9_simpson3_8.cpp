@@ -24,7 +24,7 @@ int main()
         else
             sum = sum + 3 * f(x);
     }
-    double result = (3*h / 8.0) * sum;
+    double result = (3*h / 8) * sum;
 
     cout << "Approximate integral = " << result << endl;
 

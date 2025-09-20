@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-#define f(x) 1 / (1 + (x * x))
+#define f(x) 1/(1+(x*x))
 
 int main()
 {
@@ -13,7 +13,6 @@ int main()
     cin >> b;
     cout << "Enter number of subintervals (n): ";
     cin >> n;
-
     double h = (b - a) / n;
     double sum = f(a) + f(b);
     for (int i = 1; i < n; i++)
@@ -24,9 +23,7 @@ int main()
         else
             sum = sum + 4 * f(x);
     }
-    double result = (h / 3.0) * sum;
-
+    double result = (h / 3) * sum;
     cout << "Approximate integral = " << result << endl;
-
     return 0;
 }

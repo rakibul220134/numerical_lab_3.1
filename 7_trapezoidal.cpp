@@ -20,7 +20,7 @@ int main()
       double x=a+i*h;
       sum=sum+ 2*f(x);
     }
-      double result=(h/2.0)*sum;
+      double result=(h/2)*sum;
     cout << "Approximate integral = " << result << endl;
     return 0;
 }

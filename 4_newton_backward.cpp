@@ -15,8 +15,10 @@ int main() {
     double a = x[terms - 1];
     double result = y[terms - 1];
     double u = (search - a) / h;
-    for(int i = 1; i < terms; i++) {
-        for(int j = (terms-1); j >= i; j--) {
+    for(int i = 1; i < terms; i++)
+    {
+        for(int j = (terms-1); j >= i; j--)
+        {
             y[j] = y[j] - y[j-1];
         }
         p = p * (u + i - 1) / i;

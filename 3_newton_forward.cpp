@@ -23,7 +23,7 @@ int main()
         {
             y[j] = y[j + 1] - y[j];
         }
-        p = p * (u - i + 1) / i;
+        p = (p * (u - i + 1) )/ i;
         result = result + p * y[0];
     }
     cout << "For = " << search << " result is: " << result << endl;

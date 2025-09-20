@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    double x0, y0, xn, h;
+    double x0, y0, xn, h,x,y;
     int n;
 
     cout << "Enter initial x0: ";
@@ -17,8 +17,9 @@ int main()
     cout << "Enter number of steps (n): ";
     cin >> n;
     h = (xn - x0) / n;
-    double x = x0, y = y0;
-    cout << "\nRunge-Kutta 4th Order Method:\n";
+    x = x0;
+    y = y0;
+    cout << "Range Kutta 4th Order Method:\n";
     cout << "x\ty\n";
     cout << x << "\t" << y << endl;
     for (int i = 0; i < n; i++)
@@ -27,7 +28,8 @@ int main()
         double k2 = h * f(x + h / 2.0, y + k1 / 2.0);
         double k3 = h * f(x + h / 2.0, y + k2 / 2.0);
         double k4 = h * f(x + h, y + k3);
-        y = y + (k1 + 2 * k2 + 2 * k3 + k4) / 6.0;
+        double k= (k1 + 2 * k2 + 2 * k3 + k4) / 6.0;
+        y = y + k;
         x = x + h;
         cout << x << "\t" << y << endl;
     }

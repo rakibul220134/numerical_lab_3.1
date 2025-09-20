@@ -15,9 +15,9 @@ int main()
     cin >> xn;
     cout << "Enter number of steps (n): ";
     cin >> n;
+    double h = (xn - x0) / n;
     x = x0;
     y = y0;
-    double h = (xn - x0) / n;
     for (int i = 0; i < n; i++)
     {
         double k1 = f(x, y);

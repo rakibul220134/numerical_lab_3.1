@@ -1,10 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// coefficients
-double a, b, c, d;
 #define f(x) (a*x*x*x + b*x*x + c*x + d)
 int main() {
+    double a, b, c, d;
     cout << "Enter coefficients (a b c d) for f(x) = ax^3 + bx^2 + cx + d: ";
     cin >> a >> b >> c >> d;
     double left, right, tol;
@@ -19,7 +18,10 @@ int main() {
     double mid;
     while ((right - left) >= tol) {
         mid = (left + right) / 2;
-        if (f(mid) == 0.0) break;
+        if (f(mid) == 0.0)
+        {
+            break;
+        }
         else if (f(mid) > 0) // f(mid) * f(left) < 0
         {
             right = mid;
